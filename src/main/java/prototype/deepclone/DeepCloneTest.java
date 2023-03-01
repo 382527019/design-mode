@@ -13,6 +13,10 @@ public class DeepCloneTest {
         Hero clone = hero.clone();
         System.out.println("original object address:"+hero);// prototype.deepclone.Hero@4b67cf4d
         System.out.println("copy object address:"+clone);// prototype.deepclone.Hero@27d6c5e0
-        System.out.println("deep getWeapon clone obj = copy:"+(hero.getWeapon()==clone.getWeapon()));//false
+        System.out.println("deep clone obj = copy:"+(hero.getWeapon()==clone.getWeapon()));//false
+
+        Weapon weapon = new Weapon();
+        Weapon clone1 = weapon.clone();
+        System.out.println("simple clone obj = copy:"+(weapon.getDescribe()==clone1.getDescribe()));//true
     }
 }
