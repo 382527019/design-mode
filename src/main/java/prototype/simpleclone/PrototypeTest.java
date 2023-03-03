@@ -1,15 +1,9 @@
 package prototype.simpleclone;
 
-import prototype.simpleclone.Client;
-import prototype.simpleclone.CreatePrototypeA;
-
 import java.util.Arrays;
 
 /**
- * Created with IDEA
- * author:YunGui Hhuang
- * Date:2023/3/1
- * Time:15:22
+ * 原型
  */
 public class PrototypeTest {
 
