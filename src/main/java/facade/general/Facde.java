@@ -3,13 +3,11 @@ package facade.general;
 import lombok.Data;
 
 /**
- * Created with IDEA
- * author:YunGui Hhuang
- * Date:2023/3/4
- * Time:15:57
+ * 外观角色 系统对外的统一接口
  */
 @Data
 public class Facde {
+    /** 子系统 ...*/
     private SystemA systemA = new SystemA();
     private SystemB systemB = new SystemB();
     private SystemC systemC = new SystemC();
