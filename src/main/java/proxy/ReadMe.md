@@ -36,6 +36,38 @@ public class JdkProxyClient implements InvocationHandler {
     }
 }
 ~~~
+
+* cglib
+  * maven依赖
+~~~
+<!--        cglib动态代理-->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib-nodep</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+~~~
+
+~~~
+@Data
+public class CglibproxyClient implements MethodInterceptor {
+    
+    public Object getInstance(final Class<?> clazz){
+        Enhancer enhancer = new Enhancer();
+        enhancer.setSuperclass(clazz);
+        enhancer.setCallback(this);
+        return enhancer.create();
+    }
+
+    @Override
+    public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
+        System.out.println("cglib.. start proxy");
+        Object result = methodProxy.invokeSuper(o, objects);
+        System.out.println("cglib.. end proxy");
+        return result;
+    }
+}
+~~~
 ## 静态
 * 显示声明被代理对象
 ~~~

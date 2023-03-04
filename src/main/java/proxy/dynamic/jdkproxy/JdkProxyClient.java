@@ -1,5 +1,6 @@
 package proxy.dynamic.jdkproxy;
 
+import lombok.Data;
 import proxy.Iperson;
 
 import java.lang.reflect.InvocationHandler;
@@ -13,6 +14,7 @@ import java.util.zip.Inflater;
  * Date:2023/3/3
  * Time:10:58
  */
+@Data
 public class JdkProxyClient implements InvocationHandler {
 
     private Iperson person;

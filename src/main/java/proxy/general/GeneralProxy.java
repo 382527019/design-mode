@@ -1,11 +1,14 @@
 package proxy.general;
 
+import lombok.Data;
+
 /**
  * Created with IDEA
  * author:YunGui Hhuang
  * Date:2023/3/1
  * Time:18:25
  */
+@Data
 public class GeneralProxy {
 
     private Iserver server = new IserverImpl();

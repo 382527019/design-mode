@@ -1,10 +1,12 @@
 package proxy.staticproxy;
 
+import lombok.Data;
 import proxy.Iperson;
 
 /**
  *代理端
  */
+@Data
 public class StaticProxyClient {
 
     private Iperson person;
