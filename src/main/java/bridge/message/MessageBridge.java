@@ -1,7 +1,18 @@
-package bridge.message;/**
-* Created with IDEA
-* author:YunGui Hhuang
-* Date:2023/3/9
-* Time:17:53
-* */public class MessageBridge {
+package bridge.message;
+
+/**
+ * 发送方式和紧急程度 = 》桥接
+ */
+public  abstract class MessageBridge {
+
+    private IMessage message;
+
+    public MessageBridge(IMessage message) {
+        this.message = message;
+    }
+
+    void send(String name, String context){
+        this.message.send(name,context);
+    }
+
 }

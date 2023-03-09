@@ -1,41 +1,21 @@
-# 建造者模式
-将复杂对象和它的表示分类，让同样的构建过程可以创建不同的表示
+# 桥接模式
 
-* 链式建造者
+* 把多个维度通过桥梁桥接起来
+
 ~~~
-@Data
-public class HumanBuilder {
-    private String name;
-    private String age;
-    
-    public HumanBuilder(Builder builder){
-        this.name = builder.name;
-        this.age = builder.age;
+/**
+ * 发送方式和紧急程度 = 》桥接
+ */
+public  abstract class MessageBridge {
+
+    private IMessage message;
+
+    public MessageBridge(IMessage message) {
+        this.message = message;
     }
 
-    @Data
-    static class Builder{
-        private String name;
-        private String age;
-
-        public Builder name(String name) {
-            this.name = name;
-            return this;
-
-        }
-        public Builder age(String age) {
-            this.age = age;
-            return this;
-        }
-
-        public HumanBuilder build() {
-            return new HumanBuilder(this);
-        }
+    void send(String name, String context){
+        this.message.send(name,context);
     }
 }
-
-~~~
-* 调用
-~~~
-        HumanBuilder human = new HumanBuilder.Builder().age("18").name("name").build();
 ~~~
