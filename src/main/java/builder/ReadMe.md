@@ -39,3 +39,4 @@ public class HumanBuilder {
 ~~~
         HumanBuilder human = new HumanBuilder.Builder().age("18").name("name").build();
 ~~~
+![image](https://user-images.githubusercontent.com/64847551/223993325-069621d6-f5e0-42c5-8878-40335410921c.png)
