@@ -24,7 +24,7 @@ public class Leader implements Employee {
         if (!jobMap.containsKey(job)) {
             System.out.println("无法胜任");
         }
-        System.out.print("领委派：");
+        System.out.print("领导委派：");
         Employee employee = jobMap.get(job);
         employee.word(job);
     }
