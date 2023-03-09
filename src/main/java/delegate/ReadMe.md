@@ -49,3 +49,5 @@ public class Leader implements Employee {
     }
 }
 ~~~
+![image](https://user-images.githubusercontent.com/64847551/224004491-4f601144-b2ea-4891-b80e-96f6d4be6d42.png)
+
