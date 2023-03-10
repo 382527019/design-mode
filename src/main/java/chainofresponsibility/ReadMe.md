@@ -1,42 +1,8 @@
-# 建造者模式
-将复杂对象和它的表示分类，让同样的构建过程可以创建不同的表示
+# 责任链模式
+* 使用者只需将请求发送到链上即可，不需关心请求的具体内容和处理
+* 发一个请求，多个对象处理，由运行时状态决定具体处理对象。
+---
+* 抽象处理者（Handler）
 
-* 链式建造者
-~~~
-@Data
-public class HumanBuilder {
-    private String name;
-    private String age;
-    
-    public HumanBuilder(Builder builder){
-        this.name = builder.name;
-        this.age = builder.age;
-    }
+* 具体处理者（ConcreteHandler）
 
-    @Data
-    static class Builder{
-        private String name;
-        private String age;
-
-        public Builder name(String name) {
-            this.name = name;
-            return this;
-
-        }
-        public Builder age(String age) {
-            this.age = age;
-            return this;
-        }
-
-        public HumanBuilder build() {
-            return new HumanBuilder(this);
-        }
-    }
-}
-
-~~~
-* 调用
-~~~
-        HumanBuilder human = new HumanBuilder.Builder().age("18").name("name").build();
-~~~
-![image](https://user-images.githubusercontent.com/64847551/223993325-069621d6-f5e0-42c5-8878-40335410921c.png)

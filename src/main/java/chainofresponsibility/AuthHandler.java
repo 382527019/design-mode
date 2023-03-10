@@ -5,12 +5,14 @@ package chainofresponsibility;
 /**
  * 校验处理
  */
-public class LoginHandler extends Handler {
+public class AuthHandler extends Handler {
     @Override
     public void doHandler(Member member) {
-        System.out.println("登录成功");
-        member.setRole("admin");
-        System.out.println(this.getClass().getName()+"处理通过");
-        this.chain.doHandler(member);
+        if (!member.getRole().equals("admin")){
+            System.out.println("不是admin，不通过");
+            return;
+        }
+        System.out.println(this.getClass().getName()+"认证_处理通过");
+
     }
 }

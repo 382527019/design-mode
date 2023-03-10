@@ -1,10 +1,14 @@
 package chainofresponsibility;
 
 /**
- * Created with IDEA
- * author:YunGui Hhuang
- * Date:2023/3/10
- * Time:21:49
+ * 处理器处理请求
  */
-public class Handler {
+public abstract class Handler {
+    protected Handler chain;
+
+    public void next(Handler handler){
+        this.chain = handler;
+    }
+    /*处理抽象方法*/
+    public abstract void doHandler(Member member);
 }
