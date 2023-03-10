@@ -1,4 +1,4 @@
-package chainofresponsibility;
+package chainofresponsibility.chain;
 
 /**
  * Created with IDEA

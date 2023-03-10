@@ -1,4 +1,4 @@
-package chainofresponsibility;
+package chainofresponsibility.chain;
 
 /**
  * 处理器处理请求

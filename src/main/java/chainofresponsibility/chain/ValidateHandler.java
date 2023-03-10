@@ -1,6 +1,8 @@
-package chainofresponsibility;
+package chainofresponsibility.chain;
 
 
+import chainofresponsibility.chain.Handler;
+import chainofresponsibility.chain.Member;
 
 /**
  * 校验处理
