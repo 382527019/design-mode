@@ -53,3 +53,5 @@ public class StrategyFactory {
     }
 }
 ~~~
+
+![image](https://user-images.githubusercontent.com/64847551/224274238-3a6754b3-6850-4229-96cb-99c212ba581f.png)
