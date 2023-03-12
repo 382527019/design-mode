@@ -1,6 +1,7 @@
 # 备忘录模式
 * 保存快照备份
 * 有后悔，可回退版本
+![image](https://user-images.githubusercontent.com/64847551/224550386-6d579445-fe35-45d8-b96a-d40d695ed63a.png)
 
 ---
 
