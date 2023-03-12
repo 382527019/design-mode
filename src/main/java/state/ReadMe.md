@@ -1,6 +1,8 @@
 # 状态模式
 * 对象在内部状态改变时行为也改变
 * 一个操作有很多分支结构，分支由状态决定
+![image](https://user-images.githubusercontent.com/64847551/224555489-d31e7d80-ad17-4850-ab27-f24e78f7f2c6.png)
+
 ---
 
 * 状态要在环境上下文中切换
