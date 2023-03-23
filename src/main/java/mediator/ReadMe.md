@@ -1,7 +1,7 @@
 # 中介者模式
 * 用一个中介对象封装其他对象交互，中介者独立改变他们之间的交互
 * 系统对象存在复杂引用关系，交互的公共行为，如果需要改变行为则可以增加新的中介类
-![image](https://user-images.githubusercontent.com/64847551/224632914-ee6be9a2-e19a-4fc0-ae75-e9e35279beb5.png)
+![image](https://user-images.githubusercontent.com/64847551/227153134-38673a89-cc94-4a49-b1d3-11d55d5a52d7.png)
 
 ---
 
