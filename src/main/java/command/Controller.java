@@ -5,10 +5,7 @@ import command.serverimpl.StartCommand;
 import command.serverimpl.StopCommand;
 
 /**
- * Created with IDEA
- * author:YunGui Hhuang
- * Date:2023/3/12
- * Time:19:57
+ * 控制台
  */
 public class Controller {
     public void execute(Command command){

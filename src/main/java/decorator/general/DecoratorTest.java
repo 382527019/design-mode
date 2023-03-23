@@ -1,11 +1,5 @@
 package decorator.general;
 
-/**
- * Created with IDEA
- * author:YunGui Hhuang
- * Date:2023/3/4
- * Time:17:55
- */
 public class DecoratorTest {
     public static void main(String[] args) {
         //加载装饰器

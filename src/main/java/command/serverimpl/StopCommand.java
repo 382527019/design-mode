@@ -1,6 +1,7 @@
 package command.serverimpl;
 
 import command.Command;
+import command.Player;
 
 /**
  * Created with IDEA
@@ -8,9 +9,10 @@ import command.Command;
  * Date:2023/3/12
  * Time:19:56
  */
-public class StopCommand implements Command {
+public class StopCommand extends Player implements Command {
     @Override
     public void execute() {
         System.out.println("停止播放=====");
+        super.stop();
     }
 }

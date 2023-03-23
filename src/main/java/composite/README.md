@@ -6,6 +6,9 @@
 ### 透明组合transparent
 * 抽象组件，把行为抽象定义
 ~~~
+/*
+    * 所有一致操作都定义到抽象类上
+    * */
 public abstract class CourseComponent
 ~~~
 * 叶子节点，存储信息
