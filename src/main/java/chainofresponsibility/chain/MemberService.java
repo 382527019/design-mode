@@ -1,10 +1,7 @@
 package chainofresponsibility.chain;
 
 /**
- * Created with IDEA
- * author:YunGui Hhuang
- * Date:2023/3/10
- * Time:22:00
+ *
  */
 public class MemberService {
     public void login(String name,String password){

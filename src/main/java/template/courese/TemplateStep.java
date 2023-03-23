@@ -1,7 +1,7 @@
 package template.courese;
 
 /**
- * 模板
+ * 1.模板
  */
 public abstract class TemplateStep {
 

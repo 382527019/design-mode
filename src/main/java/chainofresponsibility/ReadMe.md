@@ -1,9 +1,9 @@
 # 责任链模式
-* 使用者只需将请求发送到链上即可，不需关心请求的具体内容和处理
+* 使用者只需将请求发送到链上即可，**不需关心请求的具体内容和处理**
 * 发一个请求，多个对象处理，由运行时状态决定具体处理对象。
 ---
 * 抽象处理者（Handler）
-~~~
+~~~Java
 public abstract class Handler {
     protected Handler chain;
 
@@ -15,7 +15,7 @@ public abstract class Handler {
 }
 ~~~
 * 具体处理者（ConcreteHandler）
-~~~
+~~~Java
 public class AuthHandler extends Handler {
     @Override
     public void doHandler(Member member) {
@@ -30,7 +30,7 @@ public class AuthHandler extends Handler {
 
 
 ### 链式构建责任链
-~~~
+~~~Java
 public class BuildMemberService {
 
     public void login(String name,String password){
@@ -49,7 +49,7 @@ public class BuildMemberService {
 }
 ~~~
 登录请求doHandler操作
-~~~
+~~~Java
 /**
  * 处理器处理请求
  */

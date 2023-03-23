@@ -3,8 +3,9 @@
 
 
 定义固定模板
+常提供钩子实现钩子方法`eg: hookFree()`
 
-~~~
+~~~Java
 public abstract class TemplateStep {
 
     /*钩子*/
@@ -48,7 +49,7 @@ public abstract class TemplateStep {
 ~~~
 
 * 实现类继承模板实现抽象方法
-~~~
+~~~Java
 public class GolangStep extends TemplateStep {
 
     /*钩子函数重写*/
@@ -78,7 +79,7 @@ public class GolangStep extends TemplateStep {
 ~~~
 
 * 调用
-~~~
+~~~Java
 public class TemplateTest {
     public static void main(String[] args) {
         TemplateStep javaStep = new JavaStep();

@@ -4,10 +4,7 @@ package chainofresponsibility.buildchain;
 import chainofresponsibility.chain.Member;
 
 /**
- * Created with IDEA
- * author:YunGui Hhuang
- * Date:2023/3/10
- * Time:22:48
+ * 链式构建
  */
 public class BuildMemberService {
 
