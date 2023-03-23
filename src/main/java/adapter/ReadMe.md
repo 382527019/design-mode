@@ -4,6 +4,8 @@
 
 * 类适配器
 让Adapter实现Itarget接口和继承Adaptee，在Adapter中将两者特性转化
+![image](https://user-images.githubusercontent.com/64847551/227128273-eb6627e9-d24b-4d78-aa21-992b433f3d6b.png)
+
 ~~~
 public class AdapterClass extends AdapteeClass implements ITargetClass {
     @Override
@@ -24,6 +26,8 @@ public class AdapterClass extends AdapteeClass implements ITargetClass {
 
 * 对象适配器
 在适配器中组合被适配者
+![image](https://user-images.githubusercontent.com/64847551/227129306-f824bb3d-e3cb-49bf-a5f6-6bff76d4ae6e.png)
+
 ~~~
 public class AdapterObj implements ITargetObj {
 
